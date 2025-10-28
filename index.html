@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+        <nav>
+            <div class="navbar">
+                
+                <ul class="nav-links">
+                    <div class="logo">
+                        <img src="/assets/logo.png" alt="">
+                    </div>
+                    <li onclick="location.href='#main-sec'">home</li>
+                    <li onclick="location.href='#about-sec'">about me</li>
+                    <li onclick="location.href='#skill-sec'">skills</li>
+                    <li onclick="location.href='#projects'">projects</li>
+                    <li onclick="location.href='#contacts'">contact</li>
+                    <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for the hamburger icon -->
+        </div>
+            </ul>
+            </div>
+        </nav>
+    <div class="whole">
+        <div id="main-sec" class="main-section">
+            <div class="profile">
+                <img src="assets/profile-pic.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1>Hi, I'm Vaishnav! </h1>
+                <h3>I am a <span class="typewriter-text"></span></h3>
+                
+                <p>I specialize in Java-based web applications, blending front-end aesthetics with back-end efficiency. Passionate about creating intuitive UI/UX designs and building scalable full-stack solutions. Always exploring new tech to enhance user experiences.</p>
+                <div class="main-sec-btn">
+                    <button class="btn1">see my work</button>
+                    <button class="btn2">lets connect</button>
+                </div>
+            </div>
+        </div>
+        <div id="about-sec" class="about-sec">
+            <h1 class="heading">about me:</h1>
+            <h3>qualification:</h3>
+            <p>Currently pursuing <strong>B.tech in Computer Science</strong>, with a strong foundation in Java, web development, and UI/UX design.</p>
+            <h3>key interests:</h3>
+            <li> Full-Stack Web Development – Building scalable applications with Java & JavaScript.</li>
+            <li> UI/UX Design – Crafting user-friendly interfaces using Figma and CSS.</li>
+            <li> Hackathons & Coding Challenges – Enjoy solving real-world problems through tech.</li>
+            <li> Continuous Learning – Exploring new frameworks, tools, and industry trends.</li>
+            <li> Always eager to innovate, collaborate, and build impactful solutions!</li>
+        </div>
+        <div id="skill-sec" class="skill-sec">
+            <h1 class="heading">programming languages known:</h1>
+            <div class="skills">
+                <div class="skill-img">
+                    <img src="assets/C_Logo.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="assets/python_logo.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="assets/java_logo.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="assets/html_logo.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="assets/css_logo.png" alt="">
+                </div>
+                <div class="skill-img">
+                    <img src="assets/JavaScript_logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="project-sec">
+            <h1 class="heading">projects:</h1>
+            <div class="projects">
+                <div class="project1">
+                    <h1>Medication Reminder</h1>
+                    <p>An Web Application which takes time of medication of patients and an alarm is ringed</p>
+                </div>
+                <div class="project2">
+                    <h1>Innovation Excellence Indicators</h1>
+                    <p>An Web Application based on Innovation Excellence Indicators in an Institute or University</p>
+                </div>
+            </div>
+        </div>
+        <div id="cert-sec" class="certification-sec">
+            <h1 class="heading">certifications:</h1>
+            <div class="certifications">
+                <div class="cert1">
+                    <p class="title">The Complete Full-Stack Web Development Bootcamp (Udemy)</p>
+                    
+                </div>
+                <div class="cert2">
+                    <p>
+                        DSA in Java Programming (Udemy)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="contacts" class="contact-sec">
+            <h1 class="heading">contact:</h1>
+            <div class="contact">
+                <div class="details">
+                    <label for="name"><h3>name:</h3></label>
+                    <input type="text" id="name" placeholder="Enter your Name">
+                    <label for="email"><h3>email:</h3></label>
+                    <input type="text" id="email" placeholder="Enter your Email">
+                    <label for="message"><h3>your message:</h3></label>
+                    <input type="text" placeholder="Enter your message">
+                    <div class="c-btn">
+                        <button class="contact-btn">send your message</button>
+                    </div>
+                </div>
+                <div class="contact-img">
+                   <img src="assets/contact-nobg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 Oruganti Vaishnav. All Rights Reserved.</p>
+        <div class="social-link">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="instagram f-icon" src="assets/instagram.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/vaishnav17" target="_blank">
+                <img class="linkedin f-icon" src="assets/linkedin.png" alt="">
+            </a>
+            <a href="https://github.com/codewithvaishnav" target="_blank">
+                <img class="github f-icon" src="assets/github.svg" alt="">
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        const roles = ["Frontend Developer", "UI/UX Designer", "Python Developer", "Tech Enthusiast"];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeWriterEffect() {
+            const typewriterElement = document.querySelector(".typewriter-text");
+            const currentRole = roles[roleIndex];
+
+            if (isDeleting) {
+                typewriterElement.textContent = currentRole.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterElement.textContent = currentRole.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let speed = isDeleting ? 100 : 150; // Faster deleting
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                speed = 2000; // Pause before deleting
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                speed = 300; // Pause before typing new role
+            }
+
+            setTimeout(typeWriterEffect, speed);
+        }
+
+        typeWriterEffect();
+        function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+    }
+    </script>
+</body>
+</html>
